@@ -1,0 +1,233 @@
+@import url('http://fonts.cdnfonts.com/css/bruno-ace');
+
+
+/*             MAIN BODY                */
+.mainBody{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    height: 1100px;
+    width: 100%;
+}
+.mainBody > .register{
+    position: relative;
+    width: 40%;
+    margin: 0 auto;
+    padding: 50px 45px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.mainBody > .register::before{
+    position: absolute;
+    content: " ";
+    top: -40px;
+    left: calc(50% - 40px);
+    width: 80px;
+    height: 80px;
+    padding: 5px;
+    background-color: white;
+    background-image: url(../images/formLogo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-origin: content-box;
+    border: 1px solid #777777;
+    border-radius: 50%;
+}
+
+
+.mainBody > .register > .password > input{
+    width: 100%;
+    height: 100%;
+    padding: 18px 10px;
+    border: 1px solid #777777b2;
+    border-radius: 2px;
+
+}
+
+
+.col1{
+    grid-column: 1/2;
+    padding: 0px 20px 0px 0px;
+}
+.col2{
+    grid-column: 2/3;
+    padding: 0px 0px 0px 20px;
+}
+
+label{
+    font-size: 27px;
+    color: #FF5500;
+}
+label > span {
+    color: #FF0000;
+}
+input, select{
+    width: 100%;
+    height: 35px;
+    border-radius: 2px;
+    margin: 10px 0px;
+    box-sizing: border-box;
+}
+select{
+    color: #242222;
+    padding: 0px 5px;
+}
+
+input:not([type="submit"]){
+    padding: 18px 10px;
+    border: 1px solid #777777b2;
+}
+
+input:not([type="submit"])::placeholder{
+    font-size: 15px;
+    color: #6F6F6F;
+}
+select{
+    color: #242222;
+}
+option{
+    height: 35px;
+    font-size: 15px;
+    color: #242222;
+}
+option:first-child {
+    color: #999;
+}
+
+input[type="submit"]{
+    font-size: 20px;
+    height: 40px;
+    margin-top: 5px !important;
+    color: white;
+    background-color: #FD8042;
+    border: none;
+    margin-bottom: 0px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+input[type="file"]{
+    font-size: 15px;
+    height: 40px;
+    display: inline-block;
+    padding: 6px 12px;
+
+
+}
+input[type="submit"]:hover{
+    background-color: #fda071;
+}
+.register  p{
+    padding: 15px 0px 0px 5px;
+    font-size: 20px;
+}
+.register p > a{
+    color: #FF3D00;
+}
+.password > input , .confirmPassword > input{
+    width: 100%;
+    height: 100%;
+    padding: 18px 10px;
+    border: 1px solid #777777b2;
+    border-radius: 2px;
+    margin: 0px;
+}
+.password, .confirmPassword{
+    position: relative;
+    margin: 20px 0px;
+    width: 100%;
+    height: 35px;
+    border-radius: 2px;
+}
+.privacy{
+    position: absolute;
+    top: calc(50% - 13px);
+    right: 5px;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    cursor: pointer;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-origin: content-box;
+}
+.private{
+    background-image: url(../images/Privacy/private.png);
+}
+.public{
+    background-image: url(../images/Privacy/public.png);
+}
+
+#alert{
+    color: #d52727;
+
+}
+/*
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+!* Hide the browser's default radio button *!
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+!* Create a custom radio button *!
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+!* On mouse-over, add a grey background color *!
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+!* When the radio button is checked, add a blue background *!
+.container input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+!* Create the indicator (the dot/circle - hidden when not checked) *!
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+!* Show the indicator (dot/circle) when checked *!
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+!* Style the indicator (dot/circle) *!
+.container .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+*/
